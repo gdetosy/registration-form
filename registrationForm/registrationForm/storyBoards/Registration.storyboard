@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creat new account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-Da-sJD">
-                                <rect key="frame" x="219.66666666666663" y="91" width="143.33333333333337" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="tintColor"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="wh8-wl-g1K">
                                 <rect key="frame" x="30" y="263" width="330" height="318.33333333333326"/>
                                 <subviews>
@@ -64,14 +58,22 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQR-Wu-Smb">
+                                <rect key="frame" x="206.66666666666663" y="74" width="167.33333333333337" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Creat new account"/>
+                                <connections>
+                                    <segue destination="Gdh-BN-QDZ" kind="show" id="5Wa-WW-yC5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W4e-Da-sJD" secondAttribute="trailing" constant="27" id="8ZX-e1-Tsn"/>
                             <constraint firstItem="wh8-wl-g1K" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="NsB-4Y-LIR"/>
+                            <constraint firstItem="OQR-Wu-Smb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="74" id="Qqz-oO-OFB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OQR-Wu-Smb" secondAttribute="trailing" constant="16" id="iff-IT-E24"/>
                             <constraint firstItem="wh8-wl-g1K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="nOw-OI-WCx"/>
-                            <constraint firstItem="W4e-Da-sJD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sNZ-5r-9h2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wh8-wl-g1K" secondAttribute="trailing" constant="30" id="t8K-8K-iuc"/>
                             <constraint firstItem="wh8-wl-g1K" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tMH-5B-UQA"/>
                         </constraints>
@@ -100,6 +102,16 @@
             </objects>
             <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
         </scene>
+        <!--RegistrationStoryboard-->
+        <scene sceneID="wFx-0R-oaK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegistrationStoryboard" id="Gdh-BN-QDZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oSC-EI-NMa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Otq-hS-89N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="-66"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
@@ -107,9 +119,6 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

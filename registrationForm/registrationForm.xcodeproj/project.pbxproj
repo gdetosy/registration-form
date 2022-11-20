@@ -14,6 +14,7 @@
 		96A8EB3429291F0C007BDDB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3329291F0C007BDDB3 /* Assets.xcassets */; };
 		96A8EB3729291F0C007BDDB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3529291F0C007BDDB3 /* LaunchScreen.storyboard */; };
 		96A8EB3F292A13C2007BDDB3 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3E292A13C2007BDDB3 /* Registration.storyboard */; };
+		96AEAF0F292A26CF00697CF9 /* RegistrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		96A8EB3629291F0C007BDDB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96A8EB3829291F0C007BDDB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A8EB3E292A13C2007BDDB3 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +72,9 @@
 		96A8EB40292A1661007BDDB3 /* storyBoards */ = {
 			isa = PBXGroup;
 			children = (
-				96A8EB3029291F08007BDDB3 /* Main.storyboard */,
 				96A8EB3E292A13C2007BDDB3 /* Registration.storyboard */,
+				96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */,
+				96A8EB3029291F08007BDDB3 /* Main.storyboard */,
 				96A8EB41292A1693007BDDB3 /* delegates */,
 			);
 			path = storyBoards;
@@ -144,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AEAF0F292A26CF00697CF9 /* RegistrationStoryboard.storyboard in Resources */,
 				96A8EB3729291F0C007BDDB3 /* LaunchScreen.storyboard in Resources */,
 				96A8EB3F292A13C2007BDDB3 /* Registration.storyboard in Resources */,
 				96A8EB3429291F0C007BDDB3 /* Assets.xcassets in Resources */,
