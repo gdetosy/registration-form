@@ -32,6 +32,58 @@ class RegistrationFormViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+//MARK: - Func
+    @IBAction func emailTextField(_ sender: UITextField) {
+        
+        
+        
+    }
+
+    @IBAction func passwordTextField(_ sender: UITextField) {
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    @IBAction func nameTextField(_ sender: UITextField) {
+        
+        
+        
+        
+        
+    }
+    
+    
+    @IBAction func confirmPasswordTextField(_ sender: UITextField) {
+        
+        
+        
+        
+        
+        
+    }
+    
+  
+    @IBAction func creatAccountButton(_ sender: Any) {
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
     
     /*
      // MARK: - Navigation

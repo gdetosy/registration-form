@@ -52,6 +52,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                                        <connections>
+                                                                            <action selector="emailTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="pJn-5V-x0Y"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOM-QH-DDv">
                                                                         <rect key="frame" x="0.0" y="47" width="330" height="14.333333333333336"/>
@@ -79,6 +82,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                        <connections>
+                                                                            <action selector="nameTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="fJJ-DK-0kF"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdW-0L-P12">
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="0.0"/>
@@ -106,6 +112,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                        <connections>
+                                                                            <action selector="passwordTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="CIH-sr-bWE"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4G3-ZK-ien">
                                                                         <rect key="frame" x="0.0" y="47" width="330" height="14.333333333333336"/>
@@ -160,6 +169,9 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                        <connections>
+                                                                            <action selector="confirmPasswordTextField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="2yx-kL-cTZ"/>
+                                                                        </connections>
                                                                     </textField>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUZ-WQ-wJq">
                                                                         <rect key="frame" x="0.0" y="47" width="330" height="14.333333333333336"/>
@@ -177,6 +189,9 @@
                                                 <rect key="frame" x="111.33333333333333" y="487" width="167.33333333333337" height="34.333333333333371"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Creat new account"/>
+                                                <connections>
+                                                    <action selector="creatAccountButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="m8m-k4-XDc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
