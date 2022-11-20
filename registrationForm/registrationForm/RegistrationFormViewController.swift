@@ -72,7 +72,7 @@ class RegistrationFormViewController: UIViewController {
     }
     
   
-    @IBAction func creatAccountButton(_ sender: Any) {
+    @IBAction func creatAccountButton(_ sender: UIButton) {
         
         
         
@@ -82,6 +82,8 @@ class RegistrationFormViewController: UIViewController {
     }
     
     
+    @IBAction func signIn(_ sender: UIButton) {
+    }
     
     
     
