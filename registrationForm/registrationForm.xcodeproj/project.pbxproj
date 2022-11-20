@@ -15,6 +15,8 @@
 		96A8EB3729291F0C007BDDB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3529291F0C007BDDB3 /* LaunchScreen.storyboard */; };
 		96A8EB3F292A13C2007BDDB3 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3E292A13C2007BDDB3 /* Registration.storyboard */; };
 		96AEAF0F292A26CF00697CF9 /* RegistrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */; };
+		96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */; };
+		96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		96A8EB3829291F0C007BDDB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A8EB3E292A13C2007BDDB3 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStoryboard.storyboard; sourceTree = "<group>"; };
+		96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				96A8EB2E29291F08007BDDB3 /* ViewController.swift */,
+				96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */,
+				96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */,
 				96A8EB40292A1661007BDDB3 /* storyBoards */,
 				96A8EB3329291F0C007BDDB3 /* Assets.xcassets */,
 				96A8EB3529291F0C007BDDB3 /* LaunchScreen.storyboard */,
@@ -164,6 +170,8 @@
 			files = (
 				96A8EB2F29291F08007BDDB3 /* ViewController.swift in Sources */,
 				96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */,
+				96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */,
+				96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */,
 				96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
