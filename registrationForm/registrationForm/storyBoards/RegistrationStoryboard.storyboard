@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="797"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8v-Bf-qCn">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="511.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2Y-it-lfO">
                                                 <rect key="frame" x="298.33333333333331" y="16.000000000000004" width="75.666666666666686" height="34.333333333333343"/>
@@ -64,7 +64,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iuR-AN-tFM">
-                                                        <rect key="frame" x="0.0" y="135.66666666666666" width="330" height="62.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="135.66666666666663" width="330" height="62.333333333333343"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Enter your Name(optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yy-qI-aCL">
                                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="20.333333333333332"/>
@@ -118,7 +118,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lnO-du-Ioh">
-                                                        <rect key="frame" x="0.0" y="303.66666666666669" width="330" height="107.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="303.66666666666674" width="330" height="107.66666666666669"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="toS-GW-S7A">
                                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="10"/>
@@ -183,9 +183,10 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Df7-GW-NEf" secondAttribute="trailing" constant="30" id="2Vl-3C-Dn3"/>
                                             <constraint firstItem="G2Y-it-lfO" firstAttribute="top" secondItem="X8v-Bf-qCn" secondAttribute="top" constant="16" id="3Pb-di-pxo"/>
-                                            <constraint firstAttribute="height" constant="1500" id="CEn-NU-dER"/>
+                                            <constraint firstItem="8Ak-2X-MXD" firstAttribute="top" secondItem="Df7-GW-NEf" secondAttribute="bottom" constant="50" id="UGi-Nq-Q0F"/>
                                             <constraint firstItem="Df7-GW-NEf" firstAttribute="leading" secondItem="X8v-Bf-qCn" secondAttribute="leading" constant="30" id="Xub-ym-Gox"/>
                                             <constraint firstItem="8Ak-2X-MXD" firstAttribute="top" secondItem="Df7-GW-NEf" secondAttribute="bottom" constant="25.670000000000002" id="e46-ZN-VDx"/>
+                                            <constraint firstAttribute="bottom" secondItem="Df7-GW-NEf" secondAttribute="bottom" constant="50" id="gt1-R7-yZC"/>
                                             <constraint firstItem="8Ak-2X-MXD" firstAttribute="centerX" secondItem="X8v-Bf-qCn" secondAttribute="centerX" id="tDc-WG-mVD"/>
                                             <constraint firstItem="Df7-GW-NEf" firstAttribute="top" secondItem="X8v-Bf-qCn" secondAttribute="top" constant="50" id="uEP-h4-uef"/>
                                             <constraint firstAttribute="trailing" secondItem="G2Y-it-lfO" secondAttribute="trailing" constant="16" id="wr5-eV-teg"/>
