@@ -17,6 +17,7 @@
 		96AEAF0F292A26CF00697CF9 /* RegistrationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */; };
 		96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */; };
 		96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */; };
+		96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B7ECB8292BE6C900642F66 /* Specials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		96AEAF0E292A26CF00697CF9 /* RegistrationStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationStoryboard.storyboard; sourceTree = "<group>"; };
 		96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
+		96B7ECB8292BE6C900642F66 /* Specials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		96A8EB1E29291F07007BDDB3 = {
 			isa = PBXGroup;
 			children = (
+				96B7ECB8292BE6C900642F66 /* Specials.swift */,
 				96A8EB2929291F08007BDDB3 /* registrationForm */,
 				96A8EB2829291F08007BDDB3 /* Products */,
 			);
@@ -171,6 +174,7 @@
 				96A8EB2F29291F08007BDDB3 /* ViewController.swift in Sources */,
 				96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */,
 				96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */,
+				96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */,
 				96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */,
 				96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */,
 			);

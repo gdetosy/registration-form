@@ -12,6 +12,8 @@ class RegistrationFormViewController: UIViewController {
 
     @IBOutlet var errorMail: UILabel!
     
+    
+    
     @IBOutlet var textFieldPassword: UITextField!
     
     @IBOutlet var errorPasword: UILabel!
@@ -27,16 +29,33 @@ class RegistrationFormViewController: UIViewController {
     
     @IBOutlet var nameTextField: UITextField!
     
+    private var isValidEmail = false { didSet { buttonState() }}
+        private var isConfPass = false { didSet { buttonState() }}
+        private var passwordStrongs: PasswordStrongs = .veryWeak { didSet { buttonState() }}
+
+    //    MARK: - Func
+    func buttonState(){
+        creatAcountButton.isEnabled = isValidEmail && isConfPass && passwordStrongs != .veryWeak
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-//MARK: - Func
+
+    
+    //MARK: - IBA Func
     @IBAction func emailTextField(_ sender: UITextField) {
-        
-        
-        
+       
+        if let email = sender.text,
+                   !email.isEmpty,
+                   Specials.isValidEmail(email: email) {
+                    isValidEmail = true
+                } else {
+                    isValidEmail = false
+                }
+                errorMail.isHidden = isValidEmail
     }
 
     @IBAction func passwordTextField(_ sender: UITextField) {
