@@ -43,6 +43,10 @@ class RegistrationFormViewController: UIViewController {
         colorIndicatorPassword.forEach { view in
             view.alpha = 0.1
         }     // Do any additional setup after loading the view.
+       hideClaviature()
+        
+        
+        
     }
     
     
