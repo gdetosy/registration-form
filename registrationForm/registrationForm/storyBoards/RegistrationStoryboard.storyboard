@@ -251,39 +251,53 @@
             </objects>
             <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
         </scene>
-        <!--View Controller-->
+        <!--Secret View Controller-->
         <scene sceneID="3bh-oa-cUj">
             <objects>
-                <viewController id="9rh-lA-w7R" sceneMemberID="viewController">
+                <viewController id="9rh-lA-w7R" customClass="SecretViewController" customModule="registrationForm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nl8-86-OFj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mm-tn-oP6">
-                                <rect key="frame" x="174" y="203" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter secret code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mm-tn-oP6">
+                                <rect key="frame" x="30" y="203" width="330" height="39.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECM-Vq-HXP">
-                                <rect key="frame" x="174" y="278" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your secret code from email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECM-Vq-HXP">
+                                <rect key="frame" x="25" y="296.66666666666669" width="340" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPt-1r-HEM">
-                                <rect key="frame" x="147" y="351" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="secret code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPt-1r-HEM">
+                                <rect key="frame" x="30" y="376.33333333333331" width="330" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AiG-Qk-B1L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qPt-1r-HEM" firstAttribute="top" secondItem="ECM-Vq-HXP" secondAttribute="bottom" constant="52" id="263-qt-m5E"/>
+                            <constraint firstItem="AiG-Qk-B1L" firstAttribute="trailing" secondItem="ECM-Vq-HXP" secondAttribute="trailing" constant="25" id="FfF-Q6-6LE"/>
+                            <constraint firstItem="2Mm-tn-oP6" firstAttribute="centerX" secondItem="Nl8-86-OFj" secondAttribute="centerX" id="Nqb-CL-Hbi"/>
+                            <constraint firstItem="ECM-Vq-HXP" firstAttribute="leading" secondItem="AiG-Qk-B1L" secondAttribute="leading" constant="25" id="TRB-yd-gzz"/>
+                            <constraint firstItem="ECM-Vq-HXP" firstAttribute="top" secondItem="2Mm-tn-oP6" secondAttribute="bottom" constant="54" id="eVh-q1-EfJ"/>
+                            <constraint firstItem="2Mm-tn-oP6" firstAttribute="leading" secondItem="AiG-Qk-B1L" secondAttribute="leading" constant="30" id="ei9-8u-ZvG"/>
+                            <constraint firstItem="AiG-Qk-B1L" firstAttribute="trailing" secondItem="qPt-1r-HEM" secondAttribute="trailing" constant="30" id="gJh-MC-dv0"/>
+                            <constraint firstItem="qPt-1r-HEM" firstAttribute="leading" secondItem="AiG-Qk-B1L" secondAttribute="leading" constant="30" id="j2G-Of-E1w"/>
+                            <constraint firstItem="AiG-Qk-B1L" firstAttribute="trailing" secondItem="2Mm-tn-oP6" secondAttribute="trailing" constant="30" id="mA2-Jd-MAp"/>
+                            <constraint firstItem="2Mm-tn-oP6" firstAttribute="top" secondItem="AiG-Qk-B1L" secondAttribute="top" constant="156" id="wYx-as-3Js"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CXJ-r9-FZH"/>
+                    <connections>
+                        <outlet property="entryLbl" destination="2Mm-tn-oP6" id="RBW-4S-JYw"/>
+                        <outlet property="secretCodeLabel" destination="ECM-Vq-HXP" id="Fyv-x9-mBJ"/>
+                        <outlet property="secretCodeTextField" destination="qPt-1r-HEM" id="3pO-Ih-d5B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKQ-QL-KkO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

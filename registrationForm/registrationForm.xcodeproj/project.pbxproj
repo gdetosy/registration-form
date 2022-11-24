@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96775190292FDF0E00D1C0DA /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677518F292FDF0E00D1C0DA /* extension.swift */; };
+		96775192292FF34F00D1C0DA /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96775191292FF34F00D1C0DA /* SecretViewController.swift */; };
 		96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8EB2A29291F08007BDDB3 /* AppDelegate.swift */; };
 		96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8EB2C29291F08007BDDB3 /* SceneDelegate.swift */; };
 		96A8EB2F29291F08007BDDB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8EB2E29291F08007BDDB3 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		9677518F292FDF0E00D1C0DA /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		96775191292FF34F00D1C0DA /* SecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
 		96A8EB2729291F08007BDDB3 /* registrationForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = registrationForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A8EB2A29291F08007BDDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A8EB2C29291F08007BDDB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				96A8EB2E29291F08007BDDB3 /* ViewController.swift */,
 				96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */,
 				96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */,
+				96775191292FF34F00D1C0DA /* SecretViewController.swift */,
 				9677518F292FDF0E00D1C0DA /* extension.swift */,
 				96A8EB40292A1661007BDDB3 /* storyBoards */,
 				96A8EB3329291F0C007BDDB3 /* Assets.xcassets */,
@@ -176,6 +179,7 @@
 			files = (
 				96A8EB2F29291F08007BDDB3 /* ViewController.swift in Sources */,
 				96775190292FDF0E00D1C0DA /* extension.swift in Sources */,
+				96775192292FF34F00D1C0DA /* SecretViewController.swift in Sources */,
 				96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */,
 				96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */,
 				96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */,
