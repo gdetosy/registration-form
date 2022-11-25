@@ -106,16 +106,12 @@ class RegistrationFormViewController: UIViewController {
     }
     
     @IBAction func creatAccountButton(_ sender: UIButton) {
-        if let sendEmail = textFieldMail.text,
-           let sendPassword =  textFieldPassword.text {
+        if let userEmail = textFieldMail.text,
+           let userPassword =  textFieldPassword.text {
+            let userModel = User(name: nameTextField.text, email: userEmail, password: userPassword)
             
+            performSegue(withIdentifier: "SecretViewController", sender: userModel)
         }
-        
-        
-        performSegue(withIdentifier: "SecretViewController", sender: nil)
-        
-        
-        
         
         
         

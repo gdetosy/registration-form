@@ -18,6 +18,7 @@
 		96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */; };
 		96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */; };
 		96B58D0D2931452400078CD2 /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B58D0C2931452400078CD2 /* SecretViewController.swift */; };
+		96B58D0F29314B6700078CD2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B58D0E29314B6700078CD2 /* User.swift */; };
 		96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B7ECB8292BE6C900642F66 /* Specials.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		96AEAF10292A8DE300697CF9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		96AEAF12292A8E6800697CF9 /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 		96B58D0C2931452400078CD2 /* SecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
+		96B58D0E29314B6700078CD2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		96B7ECB8292BE6C900642F66 /* Specials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				96B7ECB8292BE6C900642F66 /* Specials.swift */,
+				96B58D0E29314B6700078CD2 /* User.swift */,
 				96A8EB2929291F08007BDDB3 /* registrationForm */,
 				96A8EB2829291F08007BDDB3 /* Products */,
 			);
@@ -178,6 +181,7 @@
 				96B58D0D2931452400078CD2 /* SecretViewController.swift in Sources */,
 				96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */,
 				96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */,
+				96B58D0F29314B6700078CD2 /* User.swift in Sources */,
 				96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */,
 				96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */,
 				96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */,
