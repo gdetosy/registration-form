@@ -13,12 +13,10 @@ class SecretViewController: UIViewController {
     @IBOutlet var secretCodeTextField: UITextField!
     var userModel: User?
     let secretCode = Int.random(in: 100000...999999)
-    func userCode(){
-        secretCodeText.text = "hello '\(secretCode)' "
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       userCode()
         // Do any additional setup after loading the view.
     }
     
@@ -34,4 +32,8 @@ class SecretViewController: UIViewController {
         }
         destVC.userModel = userModel
     }
+    func userCode(){
+        secretCodeText.text = "Your secret code \(secretCode) for \(userModel?.email ?? "")"
+    }
+    
 }
