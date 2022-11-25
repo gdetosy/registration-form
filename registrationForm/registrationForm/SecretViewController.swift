@@ -2,21 +2,17 @@
 //  SecretViewController.swift
 //  registrationForm
 //
-//  Created by tosy on 24.11.22.
+//  Created by tosy on 25.11.22.
 //
 
 import UIKit
 
-class SecretViewController: UIViewController{
+class SecretViewController: UIViewController {
+    @IBOutlet var headText: UILabel!
+    @IBOutlet var secretCodeText: UILabel!
+    @IBOutlet var secretCodeTextField: UITextField!
     
-    @IBOutlet weak var entryLbl: UILabel!
     
-
-    @IBOutlet weak var secretCodeLabel: UILabel!
-    
-    @IBOutlet weak var secretCodeTextField: UITextField!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
