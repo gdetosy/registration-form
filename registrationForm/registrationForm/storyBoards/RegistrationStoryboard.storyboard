@@ -254,7 +254,7 @@
         <!--Secret View Controller-->
         <scene sceneID="gbi-eH-KD0">
             <objects>
-                <viewController storyboardIdentifier="SecretViewController" id="MkV-Hy-msw" customClass="SecretViewController" customModule="registrationForm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MkV-Hy-msw" customClass="SecretViewController" customModule="registrationForm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z88-4i-aab">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

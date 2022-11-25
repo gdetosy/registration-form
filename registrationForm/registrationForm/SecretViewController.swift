@@ -25,15 +25,16 @@ class SecretViewController: UIViewController {
     // MARK: - Navigation
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destVC = segue.destination as? SecretViewController,
-              let userModel = sender as? User
-        else {return
-        }
-        destVC.userModel = userModel
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let destVC = segue.destination as? WelcomeUser
+//
+//        else {return}
+//        destVC.userModel = userModel
+//    }
     func userCode(){
-        secretCodeText.text = "Your secret code \(secretCode) for \(userModel?.email ?? "")"
+        secretCodeText.text = " secret code \(secretCode) \(userModel?.email ?? " ")"
+        
     }
     
 }
+

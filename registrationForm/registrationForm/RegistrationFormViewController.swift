@@ -32,11 +32,11 @@ class RegistrationFormViewController: UIViewController {
     private var passwordStrongs: PasswordStrongs = .veryWeak { didSet { buttonState() }}
     
     //    MARK: - Func
-
+    
     func buttonState() {
         creatAcountButton.isEnabled = isValidEmail && isConfPass && passwordStrongs != .veryWeak
     }
-
+    
     func startKeyobord() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -50,7 +50,7 @@ class RegistrationFormViewController: UIViewController {
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
     }
-        
+    
     @objc private func keyboardWillHide() {
         let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
         scrollView.contentInset = contentInsets
@@ -66,7 +66,7 @@ class RegistrationFormViewController: UIViewController {
     }
     
     // MARK: - IBA Func
-
+    
     @IBAction func emailTextField(_ sender: UITextField) {
         if let email = sender.text,
            !email.isEmpty,
@@ -135,14 +135,12 @@ class RegistrationFormViewController: UIViewController {
             }
         }
         
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
     }
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let destVC = segue.destination as? SecretViewController,
+                  let userModel = sender as? User
+            else { return }
+            destVC.userModel = userModel
+        }
+    }
+
