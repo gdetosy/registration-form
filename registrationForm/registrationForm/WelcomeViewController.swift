@@ -24,7 +24,12 @@ class WelcomeViewController: UIViewController {
         welcomeUserLbl.text = "Hello \(userModel?.name ?? ""), please enter secret code"
     }
 
-    @IBAction func ContinueButton() {}
+    @IBAction func ContinueButton() {
+        //    guard let userModel = userModel else { return }
+        //           UserDafaultsService.saveUserModel(userModel: userModel)
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
      // MARK: - Navigation
 
