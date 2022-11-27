@@ -15,8 +15,7 @@ final class RegistrationViewController: UIViewController {
     
     @IBOutlet weak var errorLbl: UILabel!
     
-    @IBOutlet weak var signInButton: UIButton!
-    
+
     
     
     override func viewDidLoad() {
@@ -34,6 +33,7 @@ final class RegistrationViewController: UIViewController {
     
     @IBAction func signIn() {
 errorLbl.isHidden = false
+        
         guard let email = emailTextF.text,
               let pass = passTextF.text,
               let userModel = UserService.getUserModel(),

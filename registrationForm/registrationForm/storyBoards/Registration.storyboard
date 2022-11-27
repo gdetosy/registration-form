@@ -56,7 +56,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Sign In"/>
                                         <connections>
-                                            <action selector="signIn" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fsg-XH-HX9"/>
+                                            <action selector="signIn" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GKd-SU-BbU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -86,7 +86,6 @@
                         <outlet property="ErrorLbl" destination="vX7-6h-moy" id="xOd-Ha-J0o"/>
                         <outlet property="emailTextF" destination="EMg-Wd-M6s" id="ceu-0c-PHA"/>
                         <outlet property="passTextF" destination="TmJ-wa-bQi" id="0xE-fD-xQ9"/>
-                        <outlet property="signInButton" destination="mE4-QZ-BZ0" id="xRr-HQ-WUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
