@@ -17,7 +17,7 @@ class SecretViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        userCode()
-        // Do any additional setup after loading the view.
+      helloNameLbl()  // Do any additional setup after loading the view.
     }
     
     
@@ -31,10 +31,16 @@ class SecretViewController: UIViewController {
 //        else {return}
 //        destVC.userModel = userModel
 //    }
-    func userCode(){
-        secretCodeText.text = " secret code \(secretCode) \(userModel?.email ?? " ")"
-        
+   
+    func helloNameLbl() {
+        guard (userModel?.name?.count)! > 0 else { headText.text = "Hello user, please enter secret code"
+            return
+        }
+        headText.text = "Hello \(userModel?.name ?? ""), please enter secret code"
+    }
+
+    func userCode() {
+        secretCodeText.text = " secret code \(secretCode) for \(userModel?.email ?? " ")"
     }
     
 }
-
