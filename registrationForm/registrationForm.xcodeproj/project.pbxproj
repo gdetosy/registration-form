@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		96775190292FDF0E00D1C0DA /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9677518F292FDF0E00D1C0DA /* extension.swift */; };
 		9684B8582933962800EB9F94 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684B8572933962800EB9F94 /* WelcomeViewController.swift */; };
+		9684B85A2933D25600EB9F94 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684B8592933D25600EB9F94 /* UserService.swift */; };
+		9684B85C2933D3E600EB9F94 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684B85B2933D3E600EB9F94 /* UserDefaults.swift */; };
 		96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8EB2A29291F08007BDDB3 /* AppDelegate.swift */; };
 		96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8EB2C29291F08007BDDB3 /* SceneDelegate.swift */; };
 		96A8EB3229291F08007BDDB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A8EB3029291F08007BDDB3 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		9677518F292FDF0E00D1C0DA /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		9684B8572933962800EB9F94 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9684B8592933D25600EB9F94 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9684B85B2933D3E600EB9F94 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		96A8EB2729291F08007BDDB3 /* registrationForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = registrationForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A8EB2A29291F08007BDDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96A8EB2C29291F08007BDDB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			children = (
 				96B7ECB8292BE6C900642F66 /* Specials.swift */,
 				96B58D0E29314B6700078CD2 /* User.swift */,
+				9684B85B2933D3E600EB9F94 /* UserDefaults.swift */,
 				96A8EB2929291F08007BDDB3 /* registrationForm */,
 				96A8EB2829291F08007BDDB3 /* Products */,
 			);
@@ -79,6 +84,7 @@
 				96B58D0C2931452400078CD2 /* SecretViewController.swift */,
 				9677518F292FDF0E00D1C0DA /* extension.swift */,
 				9684B8572933962800EB9F94 /* WelcomeViewController.swift */,
+				9684B8592933D25600EB9F94 /* UserService.swift */,
 				96A8EB40292A1661007BDDB3 /* storyBoards */,
 				96A8EB3329291F0C007BDDB3 /* Assets.xcassets */,
 				96A8EB3529291F0C007BDDB3 /* LaunchScreen.storyboard */,
@@ -183,9 +189,11 @@
 				9684B8582933962800EB9F94 /* WelcomeViewController.swift in Sources */,
 				96775190292FDF0E00D1C0DA /* extension.swift in Sources */,
 				96B58D0D2931452400078CD2 /* SecretViewController.swift in Sources */,
+				9684B85C2933D3E600EB9F94 /* UserDefaults.swift in Sources */,
 				96A8EB2B29291F08007BDDB3 /* AppDelegate.swift in Sources */,
 				96AEAF11292A8DE300697CF9 /* RegistrationViewController.swift in Sources */,
 				96B58D0F29314B6700078CD2 /* User.swift in Sources */,
+				9684B85A2933D25600EB9F94 /* UserService.swift in Sources */,
 				96B7ECB9292BE6C900642F66 /* Specials.swift in Sources */,
 				96AEAF13292A8E6900697CF9 /* RegistrationFormViewController.swift in Sources */,
 				96A8EB2D29291F08007BDDB3 /* SceneDelegate.swift in Sources */,

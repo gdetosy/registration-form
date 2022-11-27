@@ -41,7 +41,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
-                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-6h-moy">
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error email or password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-6h-moy">
                                                         <rect key="frame" x="0.0" y="0.0" width="330" height="0.0"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" systemColor="systemPinkColor"/>
@@ -55,6 +55,9 @@
                                         <rect key="frame" x="0.0" y="284" width="330" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Sign In"/>
+                                        <connections>
+                                            <action selector="signIn" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fsg-XH-HX9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -79,6 +82,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ljM-CE-Ie1"/>
+                    <connections>
+                        <outlet property="ErrorLbl" destination="vX7-6h-moy" id="xOd-Ha-J0o"/>
+                        <outlet property="emailTextF" destination="EMg-Wd-M6s" id="ceu-0c-PHA"/>
+                        <outlet property="passTextF" destination="TmJ-wa-bQi" id="0xE-fD-xQ9"/>
+                        <outlet property="signInButton" destination="mE4-QZ-BZ0" id="xRr-HQ-WUM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

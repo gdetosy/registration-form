@@ -107,23 +107,16 @@ class RegistrationFormViewController: UIViewController {
     
     @IBAction func creatAccountButton(_ sender: UIButton) {
         if let userEmail = textFieldMail.text,
-           let userPassword =  textFieldPassword.text {
+           let userPassword = textFieldPassword.text
+        {
             let userModel = User(name: nameTextField.text, email: userEmail, password: userPassword)
             
             performSegue(withIdentifier: "SecretViewController", sender: userModel)
         }
-        
-        
-        
-        
     }
     
     @IBAction func signIn(_ sender: UIButton) {
-        
-        
-        
-        
-        
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func passwordIndicator() {
@@ -134,15 +127,13 @@ class RegistrationFormViewController: UIViewController {
                 view.alpha = 0.1
             }
         }
-        
     }
   
-//   MARK: - navigation
+//
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let destVC = segue.destination as? SecretViewController,
-                  let userModel = sender as? User
-            else { return }
-            destVC.userModel = userModel
-        }
+        guard let destVC = segue.destination as? SecretViewController,
+              let userModel = sender as? User
+        else { return }
+        destVC.userModel = userModel
     }
-
+}

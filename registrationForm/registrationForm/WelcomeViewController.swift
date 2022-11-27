@@ -18,15 +18,15 @@ class WelcomeViewController: UIViewController {
     }
 
     func welcome() {
-        guard (userModel?.name?.count)! > 0 else { welcomeUserLbl.text = "Hello user, please enter secret code"
+        guard (userModel?.name?.count)! > 0 else { welcomeUserLbl.text = "Hello user, please enter continue"
             return
         }
-        welcomeUserLbl.text = "Hello \(userModel?.name ?? ""), please enter secret code"
+        welcomeUserLbl.text = "Hello \(userModel?.name ?? ""), please enter continue"
     }
 
     @IBAction func ContinueButton() {
-        //    guard let userModel = userModel else { return }
-        //           UserDafaultsService.saveUserModel(userModel: userModel)
+        guard let userModel = userModel else { return }
+        UserService.saveUserModel(userModel: userModel)
         navigationController?.popToRootViewController(animated: true)
     }
     
