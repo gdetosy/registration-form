@@ -136,6 +136,8 @@ class RegistrationFormViewController: UIViewController {
         }
         
     }
+  
+//   MARK: - navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard let destVC = segue.destination as? SecretViewController,
                   let userModel = sender as? User

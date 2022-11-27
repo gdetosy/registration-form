@@ -38,7 +38,7 @@ class SecretViewController: UIViewController {
             }
             return
         }
-                      performSegue(withIdentifier: "WelcomeViewController", sender: nil)
+        performSegue(withIdentifier: "WelcomeViewController", sender: userModel)
     }
     
     // MARK: -
@@ -53,4 +53,10 @@ class SecretViewController: UIViewController {
     func userCode() {
         secretCodeText.text = " secret code \(secretCode) for \(userModel?.email ?? " ")"
     }
-}
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let destVC = segue.destination as? WelcomeViewController else { return }
+     let userModel = sender as? User
+     destVC.userModel = userModel
+        }
+    }
+

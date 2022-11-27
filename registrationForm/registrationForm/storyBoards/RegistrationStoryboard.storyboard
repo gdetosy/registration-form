@@ -325,10 +325,37 @@
                     <view key="view" contentMode="scaleToFill" id="bDg-tF-cuP">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lb-mm-4Hm">
+                                <rect key="frame" x="30" y="287" width="330" height="24.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRx-GS-9Jx">
+                                <rect key="frame" x="148" y="331.33333333333331" width="94" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                <connections>
+                                    <action selector="ContinueButton" destination="1V7-x9-94y" eventType="touchUpInside" id="H7t-cx-VdB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hyB-Ln-yUi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1lb-mm-4Hm" firstAttribute="leading" secondItem="hyB-Ln-yUi" secondAttribute="leading" constant="30" id="0gy-UP-5Ge"/>
+                            <constraint firstItem="eRx-GS-9Jx" firstAttribute="leading" secondItem="hyB-Ln-yUi" secondAttribute="leading" constant="148" id="Jk5-TA-AnH"/>
+                            <constraint firstItem="hyB-Ln-yUi" firstAttribute="trailing" secondItem="eRx-GS-9Jx" secondAttribute="trailing" constant="148" id="Mzx-Fw-7d3"/>
+                            <constraint firstItem="1lb-mm-4Hm" firstAttribute="top" secondItem="hyB-Ln-yUi" secondAttribute="top" constant="240" id="Ony-B1-6nz"/>
+                            <constraint firstItem="hyB-Ln-yUi" firstAttribute="trailing" secondItem="1lb-mm-4Hm" secondAttribute="trailing" constant="30" id="VYr-xc-h24"/>
+                            <constraint firstItem="eRx-GS-9Jx" firstAttribute="top" secondItem="1lb-mm-4Hm" secondAttribute="bottom" constant="20" id="rqc-Up-neK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KFB-0T-mGO"/>
+                    <connections>
+                        <outlet property="welcomeUserLbl" destination="1lb-mm-4Hm" id="GZA-FX-e1p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDQ-rC-xQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
