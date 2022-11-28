@@ -21,7 +21,7 @@ class SecretViewController: UIViewController {
         helloNameLbl() // Do any additional setup after loading the view.
         hideClaviature()
     }
-    
+
     @IBAction func secretCodeTextField(_ sender: UITextField) {
         guard let text = sender.text,
               !text.isEmpty, text == secretCode.description
@@ -40,23 +40,23 @@ class SecretViewController: UIViewController {
         }
         performSegue(withIdentifier: "WelcomeViewController", sender: userModel)
     }
-    
+
     // MARK: -
-    
+
     func helloNameLbl() {
         guard (userModel?.name?.count)! > 0 else { headText.text = "Hello user, please enter secret code"
             return
         }
         headText.text = "Hello \(userModel?.name ?? ""), please enter secret code"
     }
-    
+
     func userCode() {
         secretCodeText.text = " secret code \(secretCode) for \(userModel?.email ?? " ")"
     }
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard let destVC = segue.destination as? WelcomeViewController else { return }
-     let userModel = sender as? User
-     destVC.userModel = userModel
-        }
-    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destVC = segue.destination as? WelcomeViewController else { return }
+        let userModel = sender as? User
+        destVC.userModel = userModel
+    }
+}

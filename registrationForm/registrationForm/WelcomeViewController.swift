@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
         UserService.saveUserModel(userModel: userModel)
         navigationController?.popToRootViewController(animated: true)
     }
-    
+
     /*
      // MARK: - Navigation
 
