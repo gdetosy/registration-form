@@ -83,7 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ljM-CE-Ie1"/>
                     <connections>
-                        <outlet property="emailTextF" destination="EMg-Wd-M6s" id="ceu-0c-PHA"/>
+                        <outlet property="emailTextF" destination="sTH-aQ-EaU" id="1sn-1G-jia"/>
                         <outlet property="errorLbl" destination="vX7-6h-moy" id="GHz-np-Kj3"/>
                         <outlet property="passTextF" destination="TmJ-wa-bQi" id="0xE-fD-xQ9"/>
                         <segue destination="iYC-GP-Jjw" kind="show" identifier="tabViewController" id="hf9-02-jNK"/>
