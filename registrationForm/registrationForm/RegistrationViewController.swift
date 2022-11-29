@@ -9,6 +9,7 @@ import UIKit
 final class RegistrationViewController: UIViewController {
     @IBOutlet var emailTextF: UITextField!
 
+    
     @IBOutlet var passTextF: UITextField!
 
     @IBOutlet var errorLbl: UILabel!
